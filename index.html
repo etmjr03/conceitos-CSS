@@ -21,6 +21,7 @@
             <li><a href="#prioridade">prioridades</a></li>
             <li><a href="#cascata">cascata</a></li>
             <li><a href="#shorthand">shorthand</a></li>
+            <li><a href="#vendor-prefixes">vendor-prefixes</a></li>
         </ul>
     </div>
 
@@ -141,8 +142,12 @@
         <p>
             O Shorthand é a "abreviação" das propriedades do CSS, ela deixa que você possa setar os valores de uma propriedade de forma simultânea,
             legível e economizando tempo.
-            <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties" target="_blank">consulte a documentação.</a></p>
-            <br>
+            <span class="gradient">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties" target="_blank" style="color: transparent">
+                    consulte a documentação clicando aqui!.
+                </a>
+            </span>
+            <br><br>
             <code>
                 <ol>
                     <li><span class="amarelo">.bg </span>{</li>
@@ -165,6 +170,37 @@
                     <li>}</li>
                 </ol>
             </code>
+        </p>
+    </div>
+
+    <div class="codigo" id="vendor-prefixes">
+        <h2>
+            vendor-prefixes
+        </h2>
+
+        <br>
+
+        <p>
+            Permite que os browsers adicione 'feactures' a fim de colocar em uso
+            alguma novidade que vemos no CSS.
+                <p class="gradient"><a href="http://ireade.github.io/which-vendor-prefix/" style="color: transparent" target="_blank">consulte sobre vendor-prefixes clicando aqui!</a></p>
+                <p class="gradient"><a href="https://caniuse.com" style="color: transparent" target="_blank">outro site para consulta vendor-prefixes clicando aqui!</a></p>
+            <p>
+                <strong class="gradient">
+                    Exemplo:
+                </strong>
+                <br><br>
+                <code>
+                    <ol>
+                        <li><span class="amarelo">h1 </span>{</li>
+                        <li>&nbsp&nbsp&nbsp&nbsp<span class="roxo">-webkit-background-clip:</span><span class="marrom"> text; /* Chrome, Safari, IOS e Android */</span></li>
+                        <li>&nbsp&nbsp&nbsp&nbsp<span class="roxo">-moz-background-clip:</span><span class="marrom"> text; /* Mozilla (Firefox) */</span></li>
+                        <li>&nbsp&nbsp&nbsp&nbsp<span class="roxo">-ms-background-clip:</span><span class="marrom"> text; /* CInternet Explorer */</span></li>
+                        <li>&nbsp&nbsp&nbsp&nbsp<span class="roxo">-o-background-clip:</span><span class="marrom"> text; /* Opera */</span></li>
+                        <li>}</li>
+                    </ol>
+                </code>
+            </p>
         </p>
     </div>
 
