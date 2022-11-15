@@ -13,6 +13,123 @@
     <h1 class="titulo-principal">
         Aqui você aprenderá conceitos sobre CSS
     </h1>
-    
+
+    <div class="menu">
+        <ul>
+            <li><a href="#declaracao">declaração CSS</a></li>
+            <li><a href="#seletores">seletores</a></li>
+            <li><a href="#prioridade">prioridades</a></li>
+        </ul>
+    </div>
+
+    <div class="codigo" id="declaracao">
+        <h3>
+            Declaração CSS
+        </h3>
+
+        <br>
+
+        <code>
+            <ol>
+                <li><span class="amarelo">h1</span> {</li>
+                <li>&nbsp&nbsp&nbsp<span class="roxo">color:&nbsp</span><span class="marrom">red;</span></li>
+                <li>}</li>
+            </ol>
+            
+            <p>
+                <br><br>
+                <stong class="gradient">h1</stong> se refere ao seletor
+                <br><br>
+                <stong class="gradient">{ }</stong> se refere a declaração
+                <br><br>
+                <stong class="gradient">color</stong> se refere a propriedade e <strong>red</strong> se refere ao valor da propriedade.
+            </p>
+        </code>
+    </div>
+
+    <div class="codigo" id="seletores">
+        <h3>
+            Seletores
+        </h3>
+
+        <br>
+
+        <ul>
+            <li><strong class="gradient center">*</strong> = É o seletor global.</li>
+            <li><strong class="gradient center">h1, h2, h3</strong> = Seletor do tipo de elemento.</li>
+            <li><strong class="gradient">.red, .m-4</strong> = Seletor de classes.</li>
+            <li><strong class="gradient">#box, #container</strong> = Seletor de ID.</li>
+        </ul>
+    </div>
+
+    <div class="codigo" id="prioridade">
+        <h3>
+            Prioridades Style
+        </h3>
+
+        <br>
+
+        <ol>
+            <li><strong class="gradient">Inline</strong> quando se usa o atributo style="  " no elemento.</li>
+            <li><strong class="gradient">Tag style</strong> quando faz o css dentro de uma tag &lt;style&gt; no arquivo HTML.</li>
+            <li><strong class="gradient">Arquivo CSS</strong> quando faz o css dentro de um arquivo CSS importando no HTML.</li>
+        </ol>
+    </div>
+
+    <div class="codigo">
+        <h3>
+            Cascata CSS
+        </h3>
+
+        <br>
+
+        <p>
+            Primeiramente devemos saber que o CSS é lido de cima para baixo, nessa ordem o atributo do seletor que terá
+            prioridade será sempre o que está embaixo.
+        </p>
+
+        <br>
+
+        <ul>
+            <li>
+                Origem do estilo = 
+                <strong class="gradient">inline</strong> > 
+                <strong class="gradient">tag style</strong>  > 
+                <strong class="gradient">arquivo style</strong>
+            </li>
+            <li>
+                Especificidade = é um valor matemático, onde, cada tipo de seletor e origem de estilo, 
+                possuem valores a serem considerados.
+                <p>
+                    0 - 
+                    <strong class="gradient">Seletor universal</strong>, 
+                    <strong class="gradient">combinações e negações pseudo-classes "(:not())"</strong>.
+                </p>
+                <p>
+                    1 - 
+                    <strong class="gradient">Element Type (h1, h2)</strong>,
+                    <strong class="gradient">pseudo-elemento (::before, ::afeter)</strong>
+                </p>
+                <p>
+                    10 - 
+                    <strong class="gradient">Classes e atributos seletores ([type="radio"])</strong>
+                </p>
+                <p>
+                    100 - 
+                    <strong class="gradient">ID selector.</strong>
+                </p>
+                <p>
+                    1000 - 
+                    <strong class="gradient">Inline.</strong>
+                </p>
+            </li>
+            <li>
+                Regra <strong class="gradient">!important</strong> vai sobrescrever a cascata do CSS, cuidado ao utilizar.
+            </li>
+        </ul>
+    </div>
+    <footer class="footer">
+        
+    </footer>
 </body>
 </html>
