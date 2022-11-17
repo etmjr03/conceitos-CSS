@@ -23,7 +23,8 @@
             <li><a href="#shorthand">shorthand</a></li>
             <li><a href="#vendor-prefixes">vendor-prefixes</a></li>
             <li><a href="#numericos-comuns">Tipos Numericos e Comuns</a></li>
-            <li><a href="#distancias">Distâncias</a></li>
+            <li><a href="#distancias-absolutas">Distâncias Absolutas</a></li>
+            <li><a href="#distancias-relativas">Distâncias Relativas</a></li>
         </ul>
     </div>
 
@@ -232,7 +233,7 @@
         <p class="gradient"><a href="https://developer.mozilla.org/pt-BR/" style="color: transparent;" target="_blank">Consultar documentação clicando aqui!</a></p>
     </div>
 
-    <div class="codigo" id="distancias">
+    <div class="codigo" id="distancias-absolutas">
         <h2>
             Distâncias Absolutas
         </h2>
@@ -241,31 +242,90 @@
 
         <p>As medidas de distâncias são fixas e não alteram seu valor, mais utilizado é o<span class="gradient"> "px"</span></p>
 
+        <br>
+
         <table>
 
             <caption>Unidades de medidas</caption>
 
+            <colgroup>
+                <col span="3" class="tabela">
+            </colgroup>
+
             <thead>
-                <th>Unidade</th>
-                <th>Nome</th>
-                <th>Equivalência</th>
+                <th class="gradient">Unidade</th>
+                <th class="gradient">Nome</th>
+                <th class="gradient">Equivalência</th>
             </thead>
 
             <thead>
                 <tr>
-                    <th>cm</th>
-                    <td>Centímetro</td>
-                    <td>1cm = 96px/2.54</td>
+                    <th class="roxo">cm</th>
+                    <td class="marrom">Centímetro</td>
+                    <td class="marrom">1cm = 96px/2.54</td>
                 </tr>
                 <tr>
-                    <th>id</th>
-                    <td>Polegadas</td>
-                    <td>1in = 2.54cm = 96px</td>
+                    <th class="roxo">id</th>
+                    <td class="marrom">Polegadas</td>
+                    <td class="marrom">1in = 2.54cm = 96px</td>
                 </tr>
                 <tr>
-                    <th>px</th>
-                    <td>Pixels</td>
-                    <td>1px = 1/96ht of 1in</td>
+                    <th class="roxo">px</th>
+                    <td class="marrom">Pixels</td>
+                    <td class="marrom">1px = 1/96ht of 1in</td>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+
+    <div class="codigo" id="distancias-relativas">
+        <h2>
+            Distâncias Relativas
+        </h2>
+
+        <br>
+
+        <p>São relativas a algum outro valor de referência, pode ser o 
+            <span class="gradient">elemento pai</span>, ou 
+            <span class="gradient">root</span>, ou o 
+            <span class="gradient">tabanho da tela</span>.
+            <br><br>
+            <strong class="gradient">Benefícios</strong>
+            : Maior adaptação aos diferentes tipos de tela.
+        </p>
+
+        <br>
+
+        <table>
+
+            <caption>Unidades de medidas</caption>
+
+            <colgroup>
+                <col span="2" class="tabela">
+            </colgroup>
+
+            <thead>
+                <th class="gradient">Unidade</th>
+                <th class="gradient">Relativo a</th>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="roxo">em</th>
+                    <td class="marrom">Tamanho da font do pai</td>
+                </tr>
+                <tr>
+                    <th class="roxo">rem</th>
+                    <td class="marrom">Tamanho da font do elemento raiz (root/html)</td>
+                </tr>
+                <tr>
+                    <th class="roxo">vw</th>
+                    <td class="marrom">1% da viewport width</td>
+                </tr>
+                <tr>
+                    <th class="roxo">vh</th>
+                    <td class="marrom">1% da viewport height</td>
                 </tr>
             </thead>
 
