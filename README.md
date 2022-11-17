@@ -9,4 +9,5 @@ Esse repositório é uma pequena documentação sobre conceitos de CSS que fui i
 - shorthand
 - vendor-prefixes
 - Tipos Numericos e Comuns
-- Distâncias
+- Distâncias Absolutas
+- Distâncias Relativas
