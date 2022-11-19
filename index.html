@@ -31,6 +31,8 @@
             <li><a href="#string-identificador">strings e identificadores</a></li>
             <li><a href="#box-model">box model</a></li>
             <li><a href="#box-sizing">Box sizing</a></li>
+            <li><a href="#block-vs-inline">display block VS inline</a></li>
+            <li><a href="#margin">margin</a></li>
         </ul>
     </div>
 
@@ -505,6 +507,115 @@
         <br>
 
         <p><span class="gradient">Essa box terá o tamanho de 100px, 60px conteúdo + 20px + 20px (respeitando o tamanho de width 100) = 100px</span></p>
+    </div>
+
+    <div class="codigo" id="block-vs-inline">
+        <h2>
+            Display Block Vs display Inline
+        </h2>
+
+        <br>
+
+        <p>
+            Nesse tópico iremos entender como as caixas de comportam em relação às outras caixas, além de seu comportamento externo.
+            <br><br>
+            <strong>Lista de elementos e seus displays padrões</strong>
+            <br>
+            block: </span><span class="gradient">p, div, selection, todos os headings (h1, h2, h3...)</span>
+            <br>
+            inline: </span><span class="gradient">a, strong, span, em</span>
+        </p>
+
+        <br>
+
+        <table>
+
+            <caption>Diferença entre os displays</caption>
+
+            <colgroup span="2" class="tabela"></colgroup>
+            <thead>
+                <tr>
+                    <th class="gradient">** block **</th>
+                    <th class="gradient">** inline **</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <td class="marrom">Ocupa toda a linha, colocando o próximo elemento abaixo desse.</td>
+                    <td class="marrom">Elemento ao lado do outro.</td>
+                </tr>
+                <tr>
+                    <td class="marrom">width e height são respeitados.</td>
+                    <td class="marrom">width e height não funcionam</td>
+                </tr>
+                <tr>
+                    <td class="marrom">padding, margin, border irão funcionar normalmente</td>
+                    <td class="marrom">somente valores horizontais de margin, padding e border.</td>
+                </tr>
+            </thead> 
+        </table>
+    </div>
+
+    <div class="codigo" id="margin">
+        <h2>
+            Margin
+        </h2>
+
+        <br>
+
+        <p>
+            É o espaço externo entro os elementos, suas pripriedades seguem o sentido horário.
+            <br><br>
+            <span class="gradient">margin collapsing:</span>
+            <br><br>
+            Com o <span class="gradient">display block</span>, as <span class="gradient">margin-top e margin-bottom</span> dos elementos abaixo e encima se juntam
+            e dão prioridade para o maior valor.
+            <br><br>
+            Com o <span class="gradient">display inline</span>, os valores de <span class="gradient">margin-top e margin-bottom</span> dos elementos laterais são somados.
+        </p>
+
+        <br>
+
+        <p><span class="gradient">Propriedades:</span></p>
+
+        <ul>
+            <li><span class="roxo">margin-top</span></li>
+            <li><span class="roxo">margin-right</li>
+            <li><span class="roxo">margin-bottom</li>
+            <li><span class="roxo">margin-left</li>
+        </ul>
+        <br>
+        <p><span class="gradient">Valores:</span></p>
+
+        <ul>
+            <li><span class="marrom">comprimentos (px, em, rem)</span></li>
+            <li><span class="marrom">porcentagem</li>
+            <li><span class="marrom">auto</li>
+        </ul>
+
+        <br>
+
+        <p>
+            Aplicando o <span class="gradient"><a href="#shorthand" style="color: transparent">shorthand</a></span>
+            na propriedade margin:
+        </p>
+
+        <br>
+
+        <code>
+            <ol>
+                <li><span class="amarelo">.div</span> {</li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">margin: </span><span class="marrom">12px 16px 10px 4px;</span></li>
+                <li><span class="verde">/* 4: top, right, bottom e left */</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">margin: </span><span class="marrom">12px 16px 0;</span></li>
+                <li><span class="verde">/* 3: top, right - left e bottom  */</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">margin: </span><span class="marrom">12px 16px;</span></li>
+                <li><span class="verde">/* 2: top - bottom e right - left */</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">margin: </span><span class="marrom">12px;</span></li>
+                <li><span class="verde">/* 1: aplica para todos */</span></li>
+                <li>}</li>
+            </ol>
+        </code>
     </div>
 
     <footer class="footer">

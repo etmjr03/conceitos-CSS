@@ -12,6 +12,7 @@
     --marrom: #cfa47a;
     --amarelo: #faee46;
     --preto: #121214;
+    --verde: #009000;
 }
 
 body {
@@ -84,6 +85,10 @@ td, th {
 
 .roxo {
     color: var(--roxo);
+}
+
+.verde {
+    color: var(--verde);
 }
 
 .tabela {
