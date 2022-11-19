@@ -34,6 +34,7 @@
             <li><a href="#block-vs-inline">display block VS inline</a></li>
             <li><a href="#margin">margin</a></li>
             <li><a href="#padding">padding</a></li>
+            <li><a href="#border-outline">border e outline</a></li>
         </ul>
     </div>
 
@@ -671,6 +672,53 @@
                 <li>}</li>
             </ol>
         </code>
+    </div>
+
+    <div class="codigo" id="border-outline">
+        <h2>
+            Border e outline
+        </h2>
+
+        <br>
+
+        <p>
+            border como o próprio nome já diz é a borda da caixa e são geralmente utilizados com o 
+            <span class="gradient">
+                <a href="#shorthand" style="color: transparent">shorthand</a>
+            </span>
+            . Suas propriedades são: 
+            <br><br>
+            <span class="gradient">border-style, border-width e border-color</span>
+            
+            <ul>
+                <li><strong class="amarelo">style: </strong><span class="gradient">solid | dotted | dashed | double | groove | ridge | inset | outset</span></li>
+                <li><strong class="amarelo">width: </strong><span class="gradient">px | em | rem</span></li>
+                <li><strong class="amarelo">color: </strong><span class="gradient">color | rgb | hexadecimal</span></li>
+            </ul>
+
+            <br><br>
+
+            <span class="gradient">Exemplo de CSS:</span>
+
+            <br><br>
+
+            <code>
+                <ol>
+                    <li><span class="amarelo">.box </span>{</li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">border: </span><span class="marrom">solid 1px red;</span></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">border-top: </span><span class="marrom">dashed 1em green;</span></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">border-bottom: </span><span class="marrom">none;</span></li>
+                    <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">outline: </span><span class="marrom">solid 4px yellow;</span></li>
+                    <li>}</li>
+                </ol>
+            </code>
+
+            <br><br>
+
+            Já o <span class="gradient">outline</span>, aplica o efeito de borda fora da caixa, como o margin, pois não faz parte
+            do box-model, geralmente utilizado é para acessibilidade, não permite ajustes individuais e está presente no focus dos inputs como padrão. 
+        </p>
+
     </div>
 
     <footer class="footer">
