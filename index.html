@@ -30,6 +30,7 @@
             <li><a href="#funcoes">funções</a></li>
             <li><a href="#string-identificador">strings e identificadores</a></li>
             <li><a href="#box-model">box model</a></li>
+            <li><a href="#box-sizing">Box sizing</a></li>
         </ul>
     </div>
 
@@ -53,7 +54,7 @@
                 <br><br>
                 <stong class="gradient">{ }</stong> se refere a declaração
                 <br><br>
-                <stong class="gradient">color</stong> se refere a propriedade e <strong>red</strong> se refere ao valor da propriedade.
+                <stong class="gradient">color</stong> se refere a propriedade e <strong class="gradient">red</strong> se refere ao valor da propriedade.
             </p>
         </code>
     </div>
@@ -454,6 +455,56 @@
                 <li><span class="gradient">Espaços fora da caixa (margin)</span></li>
             </ul>
         </p>
+    </div>
+
+    <div class="codigo" id="box-sizing">
+        <h2>
+            Box Sizing
+        </h2>
+
+        <br>
+
+        <p>
+            A caixa geralmente tem seu tamanho calculada por padrão usando como referência o conteúdo presente nela
+            <span class="gradient">content-box</span>.
+            <br>
+            portanto para você aplicar os calculos respeitando o tamanho real do width e heigth é necessário utilizar o
+            <span class="gradient">border-box</span> que irá usar como referência a borda da caixa.
+        </p>
+
+        <br>
+
+        <code>
+            <ol>
+                <li><span class="amarelo">.box</span> {</li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">width: </span><span class="marrom">100px;</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">height: </span><span class="marrom">100px;</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">padding: </span><span class="marrom">0 20px;</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">box-sizing: </span><span class="marrom">content-box;</span></li>
+                <li>}</li>
+            </ol>
+        </code>
+
+        <br>
+
+        <p><span class="gradient">Essa box terá o tamanho de 140px, 100 width + 20px + 20px = 140px</span></p>
+
+        <br>
+
+        <code>
+            <ol>
+                <li><span class="amarelo">.box</span> {</li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">width: </span><span class="marrom">100px;</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">height: </span><span class="marrom">100px;</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">padding: </span><span class="marrom">0 20px;</span></li>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<span class="roxo">box-sizing: </span><span class="marrom">border-box;</span></li>
+                <li>}</li>
+            </ol>
+        </code>
+
+        <br>
+
+        <p><span class="gradient">Essa box terá o tamanho de 100px, 60px conteúdo + 20px + 20px (respeitando o tamanho de width 100) = 100px</span></p>
     </div>
 
     <footer class="footer">
