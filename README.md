@@ -16,3 +16,8 @@ Esse repositório é uma pequena documentação sobre conceitos de CSS que fui i
 - funções
 - strings e identificadores
 - box model
+- Box sizing
+- display block VS inline
+- margin
+- padding
+- border e outline
