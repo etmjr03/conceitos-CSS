@@ -11,3 +11,7 @@ Esse repositório é uma pequena documentação sobre conceitos de CSS que fui i
 - Tipos Numericos e Comuns
 - Distâncias Absolutas
 - Distâncias Relativas
+- porcentagem
+- posição
+- funções
+- strings e identificadores
